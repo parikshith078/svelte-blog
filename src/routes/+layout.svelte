@@ -1,16 +1,21 @@
 <script lang="ts">
 	import Header from './header.svelte'
 	import Footer from './footer.svelte'
-  import '../app.css'
+	import PageTransition from '$lib/components/transition.svelte'
+	import '../app.css'
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
+
+	export let data
 </script>
 
 <div class="layout">
 	<Header />
 	<main>
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
 	</main>
 	<Footer />
 </div>

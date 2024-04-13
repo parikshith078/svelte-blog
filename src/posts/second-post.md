@@ -8,9 +8,14 @@ categories:
 published: true
 ---
 
+## Table of Content
+
 ## Svelte
 
 Media inside the **static** folder is served from `/`.
+
+## Counter
+Tesing toc
 
 ![Svelte](favicon.png)
 
